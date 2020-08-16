@@ -1,0 +1,47 @@
+body {
+    display: flex;
+}
+
+#key1 {
+    background-color: red;
+}
+
+#key2 {
+    background-color: orange;
+}
+
+#key3 {
+    background-color: yellow;
+}
+
+#key4 {
+    background-color: green;
+}
+
+#key5 {
+    background-color: blue;
+}
+
+#key6 {
+    background-color: indigo;
+}
+
+#key7 {
+    background-color: violet;
+}
+
+.key {
+    border: none;
+    flex-grow: 1;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        flex-direction: column;
+        height: 100vh
+    }
+    .key{
+        /* height: 14.1vh; */
+    }
+}

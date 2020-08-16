@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charSet="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Xylophone</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <button onclick="play(1)" id="key1" class="key"></button>
+    <button onclick="play(2)" id="key2" class="key"></button>
+    <button onclick="play(3)" id="key3" class="key"></button>
+    <button onclick="play(4)" id="key4" class="key"></button>
+    <button onclick="play(5)" id="key5" class="key"></button>
+    <button onclick="play(6)" id="key6" class="key"></button>
+    <button onclick="play(7)" id="key7" class="key"></button>
+
+      <audio id="audio1" src="Horse-Angry-Neigh-And-Breathing-www.fesliyanstudios.com.mp3"></audio>
+      <audio id="audio2" src="Horse-Breath-Short-www.fesliyanstudios.com.mp3"></audio>
+      <audio id="audio3" src="Horse-Huffing-Breathing-A-www.fesliyanstudios.com.mp3"></audio>
+      <audio id="audio4" src="Horse-Neigh-Angry-www.fesliyanstudios.com.mp3"></audio>
+      <audio id="audio5" src="Horse-Huffing-Breathing-C-www.fesliyanstudios.com.mp3"></audio>
+      <audio id="audio6" src="Horse-Huffing-Breathing-B-www.fesliyanstudios.com.mp3"></audio>
+      <audio id="audio7" src="Horse-Cry-Hard-C-www.fesliyanstudios.com.mp3"></audio>
+
+      <script>
+        function play(key) {
+          let audio = document.getElementById(`audio${key}`);
+          audio.play();
+        }
+      </script>
+</body>
+</html>
